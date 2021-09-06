@@ -52,7 +52,7 @@ export default function Counter() {
   /* STEP 1 */
  const [count, setCount]= useState(0);
   const increment = () => {
-    setCount(count + 1);
+    setCount(1);
   };
   const decrement = () => {
     setCount(count - 1);
@@ -70,6 +70,7 @@ export default function Counter() {
   return (
     <div className='widget-counter container'>
       <h2>Counter</h2>
+      
       <div id='count' style={style}>
         Number {count} is {count % 2===0 ? 'even' : 'odd'}
       </div>
