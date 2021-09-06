@@ -53,7 +53,7 @@ export default function Spinner() {
         spinnerOn && <div id='spinner' className='spinner'>--+--</div> /* STEP 2 */
       }
       <button id='toggleSpinner' onClick={toggleSpinner}>
-         {spinnerOn ? "Hide" : "Show"}
+         {spinnerOn ? "hidespinner" : "showspinner"}
       </button>
     </div>
   );
