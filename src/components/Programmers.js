@@ -35,18 +35,12 @@ export default function Programmers() {
     // It's going to utilize both slices of state to return the _name_ of the featured dev.
     // The beauty of closures is that we can "see" both slices of state from this region
     // of the program, without needing to inject the information through arguments.
-    console.log(programmers)
-    programmers.forEach(programmer =>{
-      if(programmer.id == featuredProgrammer){
-        console.log(programmer.name);
-        console.log(featuredProgrammer)
-        const cat = programmer.name;
-        return cat;
+  
+    for(let i = 0; i < programmers.length;i++){
+      if(programmers[i].id == featuredProgrammer){
+        return programmers[i].name;
+      }
     }
-    else{
-      return 'farts'
-    }
-  })
   };
 
   const style = {
